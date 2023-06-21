@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-# Dummy Kdrama data
+#Kdrama data
 kdramas = [
     {"id": 1, "title": "Crash Landing on You", "genre": "Romance"},
     {"id": 2, "title": "Goblin", "genre": "Fantasy"},
@@ -56,4 +56,4 @@ def delete_kdrama(kdrama_id):
         return jsonify({"message": "Kdrama not found"}), 404
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5000) #http://localhost:5000/kdramas
